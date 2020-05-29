@@ -1,0 +1,8 @@
+:root {
+    --base-font: 18px/1.5 Verdana, sans-serif;
+    --background-color: #ddffdd;
+    --content-top-padding: 20px;
+    --header-background-color: #ffb346;
+    --hover-background-color: #adb8b2;
+    --hover-color: #FFF;
+}
