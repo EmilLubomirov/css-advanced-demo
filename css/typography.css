@@ -1,3 +1,5 @@
 html {
-    font: 18px/1.5 Verdana, sans-serif;
+    font: var(--base-font, 18px/1.5 Verdana, sans-serif);
+    position: relative;
+    min-height: 100%;
 }

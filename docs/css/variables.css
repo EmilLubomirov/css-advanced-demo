@@ -1,8 +1,13 @@
 :root {
+
     --base-font: 18px/1.5 Verdana, sans-serif;
     --background-color: #ddffdd;
     --content-top-padding: 20px;
     --header-background-color: #ffb346;
     --hover-background-color: #adb8b2;
     --hover-color: #FFF;
+
+    --nav-icon-padding-right: 10%;
+    --nav-icon-width: 25px;
+    --nav-icon-height: 20px;
 }

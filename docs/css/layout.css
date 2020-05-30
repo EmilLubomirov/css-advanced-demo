@@ -1,11 +1,17 @@
 body {
     background-color: #ddffdd;
+    margin: 0 0 150px;
 }
 
 .site-footer{
 
     text-align: center;
-    margin-top: 35%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
 }
 
 a:active{
@@ -22,10 +28,26 @@ div.page-content{
 }
 
 a.page-title-about:before{
-    content: url("./icons/id-card-solid.svg");
+    content: url('./icons/id-card-solid.svg');
 }
 
 a.page-title-contacts:before{
-    content: url("./icons/phone-square-alt-solid.svg");
+    content: url('./icons/phone-square-alt-solid.svg');
 }
 
+a.page-title-home:before{
+    content: url('./icons/home3.svg');
+}
+
+a.nav-links:before{
+
+    display: inline-block;
+    padding-right: var(--nav-icon-padding-right, 10%);
+    width: var(--nav-icon-width, 25px);
+    height: var(--nav-icon-height, 20px);
+}
+
+div.location-map{
+
+    text-align: center;
+}
