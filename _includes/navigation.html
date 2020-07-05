@@ -1,10 +1,23 @@
 <nav class="nav location-{{include.location}}">
     <ul>
         {% assign pages = (site.pages | sort: 'order') %}
-        {% for page in pages %}
-        {% if page.title %}
-        <li><a class="nav-links page-title-{{ page.title | slugify }}" href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
-        {% endif %}
+
+        {% for single-page in pages %}
+            {% if single-page.title %}
+                {% if single-page.url == page.url %}
+                    <li>
+                        <a class=" active nav-links page-title-{{ single-page.title | slugify }}"
+                           href="{{site.baseurl}}{{single-page.url}}">{{single-page.title}}
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a class="nav-links page-title-{{ single-page.title | slugify }}"
+                           href="{{site.baseurl}}{{single-page.url}}">{{single-page.title}}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endif %}
         {% endfor %}
     </ul>
 </nav>
