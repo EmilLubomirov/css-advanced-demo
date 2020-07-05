@@ -1,0 +1,10 @@
+<nav class="nav location-{{include.location}}">
+    <ul>
+        {% assign pages = (site.pages | sort: 'order') %}
+        {% for page in pages %}
+        {% if page.title %}
+        <li><a class="nav-links page-title-{{ page.title | slugify }}" href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

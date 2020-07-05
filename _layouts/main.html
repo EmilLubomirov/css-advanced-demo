@@ -6,18 +6,17 @@
     <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
 <!--    <link rel="stylesheet" href="{{site.baseurl}}//use.fontawesome.com/releases/v5.0.7/css/all.css">-->
 </head>
+
+<script>
+    window.onload = () =>{
+        document.querySelector('body').classList.add('loaded');
+    }
+</script>
+
 <body>
 
 <header class="site-header">
-    <nav>
-        <ul>
-        {% for page in site.pages %}
-            {% if page.title %}
-            <li><a class="nav-links page-title-{{ page.title | slugify }}" href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
-            {% endif %}
-        {% endfor %}
-        </ul>
-    </nav>
+    {% include navigation.html location="header" %}
 </header>
 
 <div class="site">
@@ -29,6 +28,9 @@
     </div>
 </div>
 
-<footer class="site-footer">All rights reserved 2019 &copy;</footer>
+<footer class="site-footer">
+    {% include navigation.html location="footer" %}
+
+    All rights reserved 2019 &copy;</footer>
 </body>
 </html>
