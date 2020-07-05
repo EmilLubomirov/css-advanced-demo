@@ -26,4 +26,6 @@
 
 .nav .active{
     background: #7dd47d;
+    cursor: default;
+    pointer-events: none;
 }
