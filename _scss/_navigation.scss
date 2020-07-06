@@ -3,29 +3,29 @@
      text-align: right;
      padding-top: 0.5em;
      height: 66px;
- }
 
-.nav ul li {
+  ul li{
     display: inline-block;
     margin: 0 0.7em;
-}
+  }
 
-.nav a {
+  a{
     display: block;
     padding: 0.5em 1em;
     background: #EEE;
     color: #333;
     text-decoration: none;
     transition: background-color 0.3s linear;
-}
 
-.nav a:hover {
-    background: var(--hover-background-color, #adb8b2);
-    color: var(--hover-color, #FFF);
-}
+    &:hover{
+      background: var(--hover-background-color, #adb8b2);
+      color: var(--hover-color, #FFF);
+    }
+  }
 
-.nav .active{
+  .active{
     background: #7dd47d;
     cursor: default;
     pointer-events: none;
-}
+  }
+ }

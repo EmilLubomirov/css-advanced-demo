@@ -22,7 +22,8 @@ title: Css Advanced
 email: demo_email@abv.bg
 description: Simple description
 destination: docs
-baseurl: "/css-advanced-demo" # the subpath of your site, e.g. /blog
+baseurl: ""
+#baseurl: "/css-advanced-demo" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -45,8 +46,12 @@ exclude:
    - gemfiles/
    - Gemfile
    - Gemfile.lock
+   - node-modules
    - node_modules/
    - vendor/bundle/
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+   - package.json
+   - package-lock.json
+   - gulpfile.js

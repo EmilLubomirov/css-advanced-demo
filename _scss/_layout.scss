@@ -7,18 +7,18 @@ body {
     opacity: 0;
     transform: translate(0, -50px);
     transition: opacity 0.5s ease-in, transform 0.4s ease-in;
-}
 
-.nav li:nth-child(1){
-    transition-delay: 0.1s;
-}
+    &:nth-child(1){
+        transition-delay: 0.1s;
+    }
 
-.nav li:nth-child(2){
-    transition-delay: 0.3s;
-}
+    &:nth-child(2){
+        transition-delay: 0.3s;
+    }
 
-.nav li:nth-child(3){
-    transition-delay: 0.5s;
+    &:nth-child(3){
+        transition-delay: 0.5s;
+    }
 }
 
 .loaded .nav li{
@@ -40,15 +40,15 @@ div.page-content{
 }
 
 a.page-title-about:before{
-    content: url('./icons/id-card-solid.svg');
+    content: url('_scss/icons/home3.svg');
 }
 
 a.page-title-contacts:before{
-    content: url('./icons/phone-square-alt-solid.svg');
+    content: url('_scss/icons/phone-square-alt-solid.svg');
 }
 
 a.page-title-home:before{
-    content: url('./icons/home3.svg');
+    content: url('_scss/icons/home3.svg');
 }
 
 a.nav-links:before{
