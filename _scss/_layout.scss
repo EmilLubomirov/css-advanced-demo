@@ -31,8 +31,10 @@ a:active{
 }
 
 h1.page-title{
-
     padding-top: 40px;
+    @include bp(mobile){
+        font-size: 25px;
+    }
 }
 
 div.page-content{

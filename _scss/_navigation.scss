@@ -4,9 +4,19 @@
      padding-top: 0.5em;
      height: 66px;
 
+  ul {
+    @include bp(mobile){
+      display: none;
+    }
+  }
+
   ul li{
     display: inline-block;
     margin: 0 0.7em;
+
+    @include bp(mobile){
+      font-size: 15px;
+    }
   }
 
   a{
@@ -24,8 +34,28 @@
   }
 
   .active{
-    background: #7dd47d;
+    background: var(--hover-background-color, #adb8b2);
     cursor: default;
     pointer-events: none;
   }
  }
+
+.input-checkbox{
+  position: absolute;
+  pointer-events: none;
+  display: none;
+
+  &-label{
+    @include bp(desktop){
+      display: none;
+    }
+  }
+
+  &:checked + .site-header .nav ul{
+     display: block;
+  }
+
+  &:checked ~ .site-footer .nav ul{
+    display: block;
+  }
+}
