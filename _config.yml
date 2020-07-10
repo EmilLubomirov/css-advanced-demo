@@ -25,7 +25,7 @@ destination: docs
 baseurl: "/css-advanced" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 
 # Build settings
 theme: minima
@@ -41,16 +41,16 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
-   - docs
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node-modules
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
-   - package.json
-   - package-lock.json
-   - gulpfile.js
+  - docs
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node-modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
