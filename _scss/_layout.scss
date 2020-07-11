@@ -82,39 +82,49 @@ div.location-map{
 
 //Index page
 
-.read-more{
+.more{
+    opacity: 0;
+    height: 0;
+    transition: opacity 1s ease-in,
+                height 0.8s 0.2s ease-in;
+}
+
+.read-more {
     display: none;
 
-    &-label{
+    &-label {
+        position: relative;
         display: block;
         margin: 20px;
 
-        &:before{
+        &:before {
             color: #a61717;
             cursor: pointer;
             content: 'Read more';
         }
+
+        &:after {
+            position: absolute;
+            display: inline-block;
+            width: 13px;
+            margin-left: 7px;
+            content: url("../icons/arrow-up-solid.svg");
+        }
     }
 
-    &:checked ~ .more{
-        display: block;
+    &:checked ~ .more {
+        opacity: 1;
+        height: 200px;
+        transition: opacity 1s 0.1s ease-in,
+                    height 1s 0.1s ease-in;
     }
 
-    &:checked + &-label:before{
+    &:checked + &-label:before {
         content: 'Read less';
     }
 
-}
-.more{
-    display: none;
-}
-
-.read{
-    color: #a61717;
-    cursor: pointer;
-
-    &:active + .more {
-
-        display: block;
+    &:checked + &-label:after {
+        content: url("../icons/arrow-down-solid.svg");
     }
+
 }
