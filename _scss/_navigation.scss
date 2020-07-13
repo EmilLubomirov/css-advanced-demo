@@ -34,7 +34,8 @@
   }
 
   .active{
-    background: var(--hover-background-color, #adb8b2);
+    //background: var(--hover-background-color, #adb8b2);
+    background: red;
     cursor: default;
     pointer-events: none;
   }
